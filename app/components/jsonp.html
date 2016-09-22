@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsonp的实现方式</title>
+</head>
+<body>
+    <div id="result"></div>
+	<script src="http.js"></script>
+	<script>
+		(function(){
+			jsonp(
+					//请求的地址
+				'http://api.douban.com/v2/movie/in_theaters',
+					//传递的参数
+				{count:10,start:5},
+					//回调函数
+				function(data){
+
+				}
+			);
+
+		})();
+	</script>
+
+</body>
+</html>
